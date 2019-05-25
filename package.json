@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "git:commit": "git-cz",
+    "npm:version:major": "npm version major --no-git-tag-version",
+    "npm:version:minor": "npm version minor --no-git-tag-version",
+    "npm:version:patch": "npm version patch --no-git-tag-version"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,17 @@
   "author": "Iman Vafadarnezhad",
   "license": "UNLICENSED",
   "private": true,
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "bugs": {
     "url": "https://github.com/rapidevelop/whour/issues"
   },
-  "homepage": "https://github.com/rapidevelop/whour#readme"
+  "homepage": "https://github.com/rapidevelop/whour#readme",
+  "devDependencies": {
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0"
+  }
 }
