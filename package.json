@@ -18,7 +18,7 @@
   },
   "keywords": [],
   "author": "Iman Vafadarnezhad",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "config": {
     "commitizen": {
